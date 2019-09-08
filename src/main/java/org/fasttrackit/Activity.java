@@ -1,5 +1,5 @@
 package org.fasttrackit;
 
-public class RecreationalActivity {
+public class Activity {
     String name;
 }

@@ -6,22 +6,31 @@ package org.fasttrackit;
  */
 public class App {
     public static void main(String[] args) {
+
+        Activity activity = new Activity();
+        activity.name = "Park";
+
         Animal animal = new Animal();
         animal.name = "Rex";
         animal.namaeOfFavoriteFoods ="Chap";
         animal.nameOfRecreationActivity = "Fetc";
         animal.age = '3';
 
-        Adopter adopter = new Adopter();
-        adopter.name = "Dorin";
-        adopter.cash = 300;
-        animal.adopter = adopter;
+
+
 
         System.out.println(animal.name);
         System.out.println(animal.health);
         System.out.println(animal.hunger);
         System.out.println(animal.moodLevel);
-        System.out.println(animal.adopter);
+        System.out.println(animal.nameOfRecreationActivity);
+        System.out.println(animal.activity);
+
+        Activity activity2 = new Activity();
+        activity.name = "Yard";
+
+
+
 
         Animal animal2 = new Animal();
         animal2.name = "Thor";
@@ -33,10 +42,7 @@ public class App {
         animal.nameOfRecreationActivity = "Frisbee";
         animal.age = '5';
 
-        Adopter adopter2 = new Adopter();
-        adopter.name = "Marian";
-        adopter.cash = 500;
-        animal2.adopter = adopter;
+
 
 
         System.out.println("Animal2 name: " + animal2.name);

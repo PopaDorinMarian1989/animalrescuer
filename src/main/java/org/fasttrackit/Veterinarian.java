@@ -1,8 +1,11 @@
 package org.fasttrackit;
 
-public class Veterinarian {
+public class Veterinarian extends Adopter {
 
     String name;
-    String specialization;
+    Adopter adopter;
+    //has-a relationship
+    Activity activity;
+
 
 }
