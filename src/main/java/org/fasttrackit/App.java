@@ -16,9 +16,6 @@ public class App {
         animal.nameOfRecreationActivity = "Fetc";
         animal.age = '3';
 
-
-
-
         System.out.println(animal.name);
         System.out.println(animal.health);
         System.out.println(animal.hunger);
