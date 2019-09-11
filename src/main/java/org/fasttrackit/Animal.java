@@ -12,6 +12,8 @@ public class Animal {
     double age;
     //has-a relationship
     Activity activity;
+    Toy toy;
+
 
 
 

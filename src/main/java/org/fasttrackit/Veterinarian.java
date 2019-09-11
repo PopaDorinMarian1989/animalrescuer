@@ -7,11 +7,12 @@ public class Veterinarian  {
     String namaeOfFavoriteFoods;
     double priceConsultation;
     double age;
-    double health;
     int cabinet;
     String gender;
     //has-a relationship
     Nurse nurse;
+    Adopter adopter;
+    Animal animal;
 
 
 }

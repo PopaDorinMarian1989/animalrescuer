@@ -10,4 +10,7 @@ public class AnimalFood {
     boolean availability;
     LocalDate expirationDate;
 
+    //has-a relationship
+    Animal animal;
+
 }
