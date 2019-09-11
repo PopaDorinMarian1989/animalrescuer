@@ -21,7 +21,7 @@ public class App {
         System.out.println(animal.hunger);
         System.out.println(animal.moodLevel);
         System.out.println(animal.nameOfRecreationActivity);
-        System.out.println(animal.activity);
+
 
         Activity activity2 = new Activity();
         activity.name = "Yard";

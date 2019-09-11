@@ -9,6 +9,7 @@ public class Adopter {
     double hunger;
     boolean moodLevel;
     double age;
+    String nameSex;
 
     public double money(double cash, double spent){
 
