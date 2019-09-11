@@ -9,7 +9,13 @@ public class Adopter {
     double hunger;
     boolean moodLevel;
     double age;
-    String nameSex;
+    String gender;
+    // has-a relationship
+    Veterinarian veterinarian;
+    Nurse nurse;
+    Animal animal;
+    Activity activity;
+    Toy toy;
 
     public double money(double cash, double spent){
 

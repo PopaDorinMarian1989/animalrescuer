@@ -3,7 +3,6 @@ package org.fasttrackit;
 public class Animal {
 
     public String name;
-    public String breed;
     public double weight;
     String namaeOfFavoriteFoods;
     String nameOfRecreationActivity;
@@ -11,6 +10,8 @@ public class Animal {
     double hunger;
     boolean moodLevel;
     double age;
+    //has-a relationship
+    Activity activity;
 
 
 

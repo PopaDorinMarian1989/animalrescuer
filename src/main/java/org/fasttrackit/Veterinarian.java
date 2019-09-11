@@ -9,11 +9,9 @@ public class Veterinarian  {
     double age;
     double health;
     int cabinet;
-    String nameSex;
-
-    Adopter adopter;
+    String gender;
     //has-a relationship
-    Activity activity;
+    Nurse nurse;
 
 
 }

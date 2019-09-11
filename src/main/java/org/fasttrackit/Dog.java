@@ -6,5 +6,6 @@ public class Dog extends Animal {
     String color;
     boolean adult;
     LocalDateTime birth;
-    String nameSex;
+    String gender;
+    String breed;
 }
