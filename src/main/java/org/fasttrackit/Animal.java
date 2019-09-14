@@ -13,6 +13,7 @@ public class Animal {
     //has-a relationship
     Activity activity;
     Toy toy;
+    Game game;
 
 
 

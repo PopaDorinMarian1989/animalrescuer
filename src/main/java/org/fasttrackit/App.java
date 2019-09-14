@@ -26,6 +26,14 @@ public class App {
         toy.amount = 3;
         toy.price = 130;
         animal.toy = toy;
+        Game game = new Game();
+        game.name = "Football";
+        game.nameAdopter ="Dorin";
+        game.nameVeterinarian = "Adrian";
+        game.nameDog = "Rex";
+        game.nameCat = "Titica";
+        game.nameLizard = "Luffi";
+        animal.game = game;
 
         System.out.println(animal.name);
         System.out.println(animal.health);
@@ -34,6 +42,7 @@ public class App {
         System.out.println(animal.nameOfRecreationActivity);
         System.out.println(animal.activity);
         System.out.println(animal.toy);
+        System.out.printf("animal.game");
 
         Activity activity2 = new Activity();
         activity.name = "Rolling";
