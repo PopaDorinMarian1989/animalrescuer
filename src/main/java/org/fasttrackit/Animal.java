@@ -14,6 +14,7 @@ public class Animal {
     Activity activity;
     Toy toy;
     Game game;
+    AnimalFood animalFood;
 
 
 

@@ -34,6 +34,11 @@ public class App {
         game.nameCat = "Titica";
         game.nameLizard = "Luffi";
         animal.game = game;
+        AnimalFood animalFood = new AnimalFood();
+        animalFood.name ="Chap";
+        animalFood.price = 13;
+        animalFood.amount = 1;
+        animal.animalFood = animalFood;
 
         System.out.println(animal.name);
         System.out.println(animal.health);
@@ -43,6 +48,7 @@ public class App {
         System.out.println(animal.activity);
         System.out.println(animal.toy);
         System.out.printf("animal.game");
+        System.out.println("animal.animalFood");
 
         Activity activity2 = new Activity();
         activity.name = "Rolling";

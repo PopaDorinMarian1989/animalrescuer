@@ -22,6 +22,8 @@ public class Adopter {
         System.out.println(name + "is moneyAvailable with " + cash + spent);
         double money = cash - spent;
         System.out.println("Money: " + money);
+        cash += money;
+
 
 
         return money;
