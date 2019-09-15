@@ -1,4 +1,5 @@
 package org.fasttrackit;
+
 // inheritance (is-a relationship)
 public class Animal {
 
@@ -10,14 +11,12 @@ public class Animal {
     double hunger;
     boolean moodLevel;
     double age;
+
     //has-a relationship
     Activity activity;
     Toy toy;
     Game game;
     AnimalFood animalFood;
-
-
-
 
 
 

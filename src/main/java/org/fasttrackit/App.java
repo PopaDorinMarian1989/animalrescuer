@@ -4,16 +4,13 @@ import java.util.ArrayDeque;
 
 /**
  * Hello world!
- *
  */
 public class App {
     public static void main(String[] args) {
 
-
-
         Animal animal = new Animal();
         animal.name = "Rex";
-        animal.namaeOfFavoriteFoods ="Chap";
+        animal.namaeOfFavoriteFoods = "Chap";
         animal.nameOfRecreationActivity = "Fetc";
         animal.age = '3';
         animal.weight = 13;
@@ -28,14 +25,14 @@ public class App {
         animal.toy = toy;
         Game game = new Game();
         game.name = "Football";
-        game.nameAdopter ="Dorin";
+        game.nameAdopter = "Dorin";
         game.nameVeterinarian = "Adrian";
         game.nameDog = "Rex";
         game.nameCat = "Titica";
         game.nameLizard = "Luffi";
         animal.game = game;
         AnimalFood animalFood = new AnimalFood();
-        animalFood.name ="Chap";
+        animalFood.name = "Chap";
         animalFood.price = 13;
         animalFood.amount = 1;
         animal.animalFood = animalFood;
@@ -47,8 +44,9 @@ public class App {
         System.out.println(animal.nameOfRecreationActivity);
         System.out.println(animal.activity);
         System.out.println(animal.toy);
-        System.out.printf("animal.game");
-        System.out.println("animal.animalFood");
+        System.out.println(animal.game);
+        System.out.println(animal.animalFood);
+
 
         Activity activity2 = new Activity();
         activity.name = "Rolling";
@@ -58,15 +56,14 @@ public class App {
         toy.price = 150;
 
         Animal animal2 = new Animal();
-        animal2.name = "Thor";
-
-        animal.name = "Ulise";
+        animal2.name = "Titica";
+//        animal.name = "Ulise";
 //        animal.name = null;
 
-        animal.namaeOfFavoriteFoods ="Pedigree";
-        animal.nameOfRecreationActivity = "Frisbee";
-        animal.age = '5';
-        animal.weight = 5;
+        animal2.namaeOfFavoriteFoods = "Pedigree";
+        animal2.nameOfRecreationActivity = "Frisbee";
+        animal2.age = '5';
+        animal2.weight = 5;
 
         animal2.activity = activity;
         animal2.toy = toy;
@@ -81,13 +78,54 @@ public class App {
         System.out.println(animal2.moodLevel);
         System.out.println(animal2.nameOfRecreationActivity);
 
+        Animal animal3 = new Animal();
+        animal3.name = "Luffi";
+        animal3.namaeOfFavoriteFoods = "Worms";
+        animal3.nameOfRecreationActivity = "Sleep";
+        animal3.age = 1;
+        animal3.weight = 1;
+        System.out.println(animal3.name);
+        System.out.println(animal3.health);
+        System.out.println(animal3.hunger);
+        System.out.println(animal3.moodLevel);
+        System.out.println(animal3.nameOfRecreationActivity);
+
+
+        Dog dog = new Dog();
+        dog.color = "Black";
+        dog.gender = "Male";
+        dog.breed = "Jindo";
+        dog.typeOfDog ="Hunting";
+        System.out.println(dog.color);
+        System.out.println(dog.gender);
+        System.out.println(dog.breed);
+        System.out.println(dog.typeOfDog);
+
+        Cat cat = new Cat();
+        cat.color = "Red";
+        cat.gender = "Female";
+        cat.breed = "Bombay";
+        cat.size = "Small";
+        System.out.println(cat.color);
+        System.out.println(cat.gender);
+        System.out.println(cat.breed);
+        System.out.println(cat.size);
+
+        Lizard lizard = new Lizard();
+        lizard.color = "Green";
+        lizard.gender = "Male";
+        lizard.locationOfBirth = "Asia";
+        System.out.println(lizard.color);
+        System.out.println(lizard.gender);
+        System.out.println(lizard.locationOfBirth);
+
         Adopter adopter = new Adopter();
         adopter.name = "Dorin";
         adopter.cash = 2500;
         adopter.namaeOfFavoriteFoods = "Steak";
         adopter.nameOfRecreationActivity = "Gym";
         adopter.age = 30;
-        adopter.gender ="Male";
+        adopter.gender = "Male";
 
         Toy toy3 = new Toy();
         toy.name = "Bone";
@@ -98,7 +136,7 @@ public class App {
         activity.name = "Sleep";
         activity.place = "Home";
         adopter.activity = activity;
-        Animal animal3 = new Animal();
+        Animal animal4 = new Animal();
         animal.name = "Brutus";
         adopter.animal = animal;
         Veterinarian veterinarian1 = new Veterinarian();
@@ -109,6 +147,8 @@ public class App {
         nurse.age = 34;
         nurse.gender = "Female";
         adopter.nurse = nurse;
+
+        adopter.money(300,100);
 
         System.out.println(adopter.name);
         System.out.println(adopter.health);
@@ -124,9 +164,10 @@ public class App {
         veterinarian.age = 33;
         veterinarian.cabinet = 1;
         veterinarian.gender = "Male";
-        System.out.printf(veterinarian.name);
+        veterinarian.gainCash(200,50);
+        System.out.println(veterinarian.name);
 
-        Animal animal4 = new Animal();
+        Animal animal5 = new Animal();
         animal.name = "Linda";
         veterinarian.animal = animal;
         Adopter adopter1 = new Adopter();
@@ -135,17 +176,6 @@ public class App {
         Nurse nurse1 = new Nurse();
         nurse.name = "Adriana";
         veterinarian.nurse = nurse;
-
-
-
-
-
-
-
-
-
-
-
 
 
     }

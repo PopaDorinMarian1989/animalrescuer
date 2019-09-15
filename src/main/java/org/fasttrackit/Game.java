@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class Game {
+public class Game  {
 
 
     String name;

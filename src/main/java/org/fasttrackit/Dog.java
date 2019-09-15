@@ -4,8 +4,12 @@ import java.time.LocalDateTime;
 
 public class Dog extends Animal {
     String color;
-    boolean adult;
-    LocalDateTime birth;
     String gender;
     String breed;
+    String typeOfDog;
+
+
+
+
+
 }

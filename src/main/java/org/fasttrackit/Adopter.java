@@ -17,13 +17,12 @@ public class Adopter {
     Activity activity;
     Toy toy;
 
-    public double money(double cash, double spent){
+    public double money(double cash, double spent) {
 
         System.out.println(name + "is moneyAvailable with " + cash + spent);
         double money = cash - spent;
         System.out.println("Money: " + money);
         cash += money;
-
 
 
         return money;

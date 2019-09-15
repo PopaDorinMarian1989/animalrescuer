@@ -7,5 +7,4 @@ public class Toy {
     double price;
 
 
-
 }
