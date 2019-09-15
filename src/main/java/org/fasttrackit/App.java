@@ -16,26 +16,26 @@ public class App {
         animal.setAge(3);
         animal.setAge(13);
         Activity activity = new Activity();
-        activity.name = "Running";
-        activity.place = "Park";
+        activity.setName("Running");
+        activity.setPlace("Park");
         animal.activity = activity;
         Toy toy = new Toy();
-        toy.name = "Frisbee";
-        toy.amount = 3;
-        toy.price = 130;
+        toy.setName("Frisbee");
+        toy.setAmount(3);
+        toy.setPrice(130);
         animal.toy = toy;
         Game game = new Game();
-        game.name = "Football";
-        game.nameAdopter = "Dorin";
-        game.nameVeterinarian = "Adrian";
-        game.nameDog = "Rex";
-        game.nameCat = "Titica";
-        game.nameLizard = "Luffi";
+        game.setName("Football");
+        game.setNameAdopter("Dorin");
+        game.setNameVeterinarian("Adrian");
+        game.setNameDog("rex");
+        game.setNameCat("Titica");
+        game.setNameLizard("Luffi");
         animal.game = game;
         AnimalFood animalFood = new AnimalFood();
-        animalFood.name = "Chap";
-        animalFood.price = 13;
-        animalFood.amount = 1;
+        animalFood.setName("Chap");
+        animalFood.setPrice(13);
+        animalFood.setAmount(1);
         animal.animalFood = animalFood;
 
         System.out.println(animal.getName());
@@ -50,11 +50,11 @@ public class App {
 
 
         Activity activity2 = new Activity();
-        activity.name = "Rolling";
+        activity.setName("Rolling");
         Toy toy2 = new Toy();
-        toy.name = "Ball";
-        toy.amount = 5;
-        toy.price = 150;
+        toy.setName("Ball");
+        toy.setAmount(5);
+        toy.setPrice(150);
 
         Animal animal2 = new Animal();
         animal2.setName("Titica");
@@ -93,32 +93,32 @@ public class App {
 
 
         Dog dog = new Dog();
-        dog.color = "Black";
-        dog.gender = "Male";
-        dog.breed = "Jindo";
-        dog.typeOfDog ="Hunting";
-        System.out.println(dog.color);
-        System.out.println(dog.gender);
-        System.out.println(dog.breed);
-        System.out.println(dog.typeOfDog);
+        dog.setColor("Black");
+        dog.setGender("Male");
+        dog.setBreed("Jindo");
+        dog.setTypeOfDog("Hunting");
+        System.out.println(dog.getColor());
+        System.out.println(dog.getGender());
+        System.out.println(dog.getBreed());
+        System.out.println(dog.getTypeOfDog());
 
         Cat cat = new Cat();
-        cat.color = "Red";
-        cat.gender = "Female";
-        cat.breed = "Bombay";
-        cat.size = "Small";
-        System.out.println(cat.color);
-        System.out.println(cat.gender);
-        System.out.println(cat.breed);
-        System.out.println(cat.size);
+        cat.setColor("Red");
+        cat.setGender("Female");
+        cat.setBreed("Bombay");
+        cat.setSize("Small");
+        System.out.println(cat.getColor());
+        System.out.println(cat.getGender());
+        System.out.println(cat.getBreed());
+        System.out.println(cat.getSize());
 
         Lizard lizard = new Lizard();
-        lizard.color = "Green";
-        lizard.gender = "Male";
-        lizard.locationOfBirth = "Asia";
-        System.out.println(lizard.color);
-        System.out.println(lizard.gender);
-        System.out.println(lizard.locationOfBirth);
+        lizard.setColor("Green");
+        lizard.setGender("Male");
+        lizard.setLocationOfBirth("Asia");
+        System.out.println(lizard.getColor());
+        System.out.println(lizard.getGender());
+        System.out.println(lizard.getLocationOfBirth());
 
         Adopter adopter = new Adopter();
         adopter.setName("Dorin");
@@ -129,13 +129,13 @@ public class App {
         adopter.setGender("Male");
 
         Toy toy3 = new Toy();
-        toy.name = "Bone";
-        toy.amount = 4;
-        toy.price = 120;
+        toy.setName("Bone");
+        toy.setAmount(4);
+        toy.setPrice(120);
         adopter.toy = toy;
         Activity activity3 = new Activity();
-        activity.name = "Sleep";
-        activity.place = "Home";
+        activity.setName("Sleep");
+        activity.setPlace("Home");
         adopter.activity = activity;
         Animal animal4 = new Animal();
         animal.setName("Brutus");
@@ -144,9 +144,9 @@ public class App {
         veterinarian1.setName("Dorel");
         adopter.veterinarian = veterinarian1;
         Nurse nurse = new Nurse();
-        nurse.name = "Ioana";
-        nurse.age = 34;
-        nurse.gender = "Female";
+        nurse.setName("Ioana");
+        nurse.setAge(34);
+        nurse.setGender("Female");
         adopter.nurse = nurse;
 
         adopter.money(300,100);
@@ -175,7 +175,7 @@ public class App {
         adopter.setName("Simina");
         veterinarian.adopter = adopter;
         Nurse nurse1 = new Nurse();
-        nurse.name = "Adriana";
+        nurse.setName("Adriana");
         veterinarian.nurse = nurse;
 
         System.out.println("Animal name");

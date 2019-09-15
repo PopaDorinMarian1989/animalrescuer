@@ -4,11 +4,49 @@ import java.time.LocalDate;
 
 public class AnimalFood {
 
-    String name;
-    double price;
-    double amount;
-    boolean availability;
-    LocalDate expirationDate;
+   private String name;
+   private double price;
+   private double amount;
+   private boolean availability;
+   private LocalDate expirationDate;
 
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public boolean isAvailability() {
+        return availability;
+    }
+
+    public void setAvailability(boolean availability) {
+        this.availability = availability;
+    }
+
+    public LocalDate getExpirationDate() {
+        return expirationDate;
+    }
+
+    public void setExpirationDate(LocalDate expirationDate) {
+        this.expirationDate = expirationDate;
+    }
 }
