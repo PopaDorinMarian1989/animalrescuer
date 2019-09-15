@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class Activity {
+public class Activity  {
     String name;
     String place;
 

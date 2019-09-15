@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-public class Nurse {
+public class Nurse  {
     String name;
     double age;
     double health;
