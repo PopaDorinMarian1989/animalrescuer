@@ -1,6 +1,6 @@
 package org.fasttrackit;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 public class AnimalFood {
 
@@ -8,7 +8,7 @@ public class AnimalFood {
    private double price;
    private double amount;
    private boolean availability;
-   private LocalDate expirationDate;
+   private Date expirationDate;
 
     public String getName() {
         return name;
@@ -42,11 +42,11 @@ public class AnimalFood {
         this.availability = availability;
     }
 
-    public LocalDate getExpirationDate() {
+    public Date getExpirationDate() {
         return expirationDate;
     }
 
-    public void setExpirationDate(LocalDate expirationDate) {
+    public void setExpirationDate(Date expirationDate) {
         this.expirationDate = expirationDate;
     }
 }

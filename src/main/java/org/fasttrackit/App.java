@@ -1,12 +1,16 @@
 package org.fasttrackit;
 
+import java.time.LocalDateTime;
 import java.util.ArrayDeque;
+import java.util.Date;
 import java.util.Scanner;
 
 /**
  * Hello world!
  */
 public class App {
+    private static Date LocalDateTime;
+
     public static void main(String[] args) {
 
         Animal animal = new Animal("");
@@ -36,6 +40,7 @@ public class App {
         animalFood.setName("Chap");
         animalFood.setPrice(13);
         animalFood.setAmount(1);
+        animalFood.setExpirationDate(LocalDateTime);
         animal.animalFood = animalFood;
 
         System.out.println(animal.getName());
