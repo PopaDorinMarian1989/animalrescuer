@@ -4,7 +4,12 @@ package org.fasttrackit;
 public class Animal {
 
    private String name;
-   private double weight;
+
+    public Animal(String name) {
+        this.name = name;
+    }
+
+    private double weight;
    private String namaeOfFavoriteFoods;
    private String nameOfRecreationActivity;
    private double health;

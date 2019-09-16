@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
-        Animal animal = new Animal();
+        Animal animal = new Animal("");
         animal.setName("Rex");
         animal.setNamaeOfFavoriteFoods("Chap");
         animal.setNameOfRecreationActivity("Fetc");
@@ -56,7 +56,7 @@ public class App {
         toy.setAmount(5);
         toy.setPrice(150);
 
-        Animal animal2 = new Animal();
+        Animal animal2 = new Animal("");
         animal2.setName("Titica");
 //        animal.name = "Ulise";
 //        animal.name = null;
@@ -79,7 +79,7 @@ public class App {
         System.out.println(animal2.isMoodLevel());
         System.out.println(animal2.getNameOfRecreationActivity());
 
-        Animal animal3 = new Animal();
+        Animal animal3 = new Animal("");
         animal3.setName("Luffi");
         animal3.setNamaeOfFavoriteFoods("Worms");
         animal3.setNameOfRecreationActivity("Sleep");
@@ -92,7 +92,7 @@ public class App {
         System.out.println(animal3.getNameOfRecreationActivity());
 
 
-        Dog dog = new Dog();
+        Dog dog = new Dog("");
         dog.setColor("Black");
         dog.setGender("Male");
         dog.setBreed("Jindo");
@@ -102,7 +102,7 @@ public class App {
         System.out.println(dog.getBreed());
         System.out.println(dog.getTypeOfDog());
 
-        Cat cat = new Cat();
+        Cat cat = new Cat("");
         cat.setColor("Red");
         cat.setGender("Female");
         cat.setBreed("Bombay");
@@ -112,7 +112,7 @@ public class App {
         System.out.println(cat.getBreed());
         System.out.println(cat.getSize());
 
-        Lizard lizard = new Lizard();
+        Lizard lizard = new Lizard("");
         lizard.setColor("Green");
         lizard.setGender("Male");
         lizard.setLocationOfBirth("Asia");
@@ -137,7 +137,7 @@ public class App {
         activity.setName("Sleep");
         activity.setPlace("Home");
         adopter.activity = activity;
-        Animal animal4 = new Animal();
+        Animal animal4 = new Animal("");
         animal.setName("Brutus");
         adopter.animal = animal;
         Veterinarian veterinarian1 = new Veterinarian();
@@ -168,7 +168,7 @@ public class App {
         veterinarian.gainCash(200,50);
         System.out.println(veterinarian.getName());
 
-        Animal animal5 = new Animal();
+        Animal animal5 = new Animal("");
         animal.setName("Linda");
         veterinarian.animal = animal;
         Adopter adopter1 = new Adopter();

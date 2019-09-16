@@ -8,6 +8,10 @@ public class Dog extends Animal {
    private String breed;
    private String typeOfDog;
 
+    public Dog(String name) {
+        super(name);
+    }
+
     public String getColor() {
         return color;
     }

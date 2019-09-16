@@ -8,6 +8,10 @@ public class Cat extends Animal {
    private String breed;
    private String size;
 
+    public Cat(String name) {
+        super(name);
+    }
+
     public String getColor() {
         return color;
     }
