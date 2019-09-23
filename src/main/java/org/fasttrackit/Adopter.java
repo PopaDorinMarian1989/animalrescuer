@@ -1,21 +1,22 @@
 package org.fasttrackit;
 
 public class Adopter {
-   private String name;
-   private double cash;
-   private String namaeOfFavoriteFoods;
-   private String nameOfRecreationActivity;
-   private double health;
-   private double hunger;
-   private boolean moodLevel;
-   private double age;
-   private String gender;
+    private String name;
+    private double cash;
+    private String namaeOfFavoriteFoods;
+    private String nameOfRecreationActivity;
+    private double health;
+    private double hunger;
+    private boolean moodLevel;
+    private double age;
+    private String gender;
     // has-a relationship
     Veterinarian veterinarian;
     Nurse nurse;
     Animal animal;
     Activity activity;
     Toy toy;
+
 
     public String getName() {
         return name;
@@ -87,6 +88,9 @@ public class Adopter {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+    public double money(double cash){
+        return money(cash, 100);
     }
 
     public double money(double cash, double spent) {

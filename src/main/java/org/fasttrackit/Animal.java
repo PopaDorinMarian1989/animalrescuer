@@ -1,21 +1,26 @@
 package org.fasttrackit;
 
+import sun.jvm.hotspot.gc.shared.Generation;
+
+import javax.lang.model.element.Name;
+import java.util.jar.Attributes;
+
 // inheritance (is-a relationship)
 public class Animal {
 
-   private String name;
+    private String name;
 
     public Animal(String name) {
         this.name = name;
     }
 
     private double weight;
-   private String namaeOfFavoriteFoods;
-   private String nameOfRecreationActivity;
-   private double health;
-   private double hunger;
-   private boolean moodLevel;
-   private double age;
+    private String namaeOfFavoriteFoods;
+    private String nameOfRecreationActivity;
+    private double health;
+    private double hunger;
+    private boolean moodLevel;
+    private double age;
 
     //has-a relationship
     Activity activity;

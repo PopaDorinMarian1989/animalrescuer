@@ -1,8 +1,8 @@
 package org.fasttrackit;
 
-public class Activity  {
-   private String name;
-   private String place;
+public class Activity {
+    private String name;
+    private String place;
 
     public String getName() {
         return name;

@@ -2,9 +2,9 @@ package org.fasttrackit;
 
 public class Toy {
 
-   private String name;
-   private double amount;
-   private double price;
+    private String name;
+    private double amount;
+    private double price;
 
     public String getName() {
         return name;

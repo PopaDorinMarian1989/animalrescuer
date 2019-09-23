@@ -19,23 +19,18 @@ public class App {
         animal.setNameOfRecreationActivity("Fetc");
         animal.setAge(3);
         animal.setAge(13);
+
         Activity activity = new Activity();
         activity.setName("Running");
         activity.setPlace("Park");
         animal.activity = activity;
+
         Toy toy = new Toy();
         toy.setName("Frisbee");
         toy.setAmount(3);
         toy.setPrice(130);
         animal.toy = toy;
-        Game game = new Game();
-        game.setName("Football");
-        game.setNameAdopter("Dorin");
-        game.setNameVeterinarian("Adrian");
-        game.setNameDog("rex");
-        game.setNameCat("Titica");
-        game.setNameLizard("Luffi");
-        animal.game = game;
+
         AnimalFood animalFood = new AnimalFood();
         animalFood.setName("Chap");
         animalFood.setPrice(13);
@@ -112,6 +107,9 @@ public class App {
         cat.setGender("Female");
         cat.setBreed("Bombay");
         cat.setSize("Small");
+        cat.setWaterProcentage(30);
+        cat.setPawsCount(4);
+
         System.out.println(cat.getColor());
         System.out.println(cat.getGender());
         System.out.println(cat.getBreed());
@@ -154,7 +152,7 @@ public class App {
         nurse.setGender("Female");
         adopter.nurse = nurse;
 
-        adopter.money(300,100);
+        adopter.money(300, 100);
 
         System.out.println(adopter.getName());
         System.out.println(adopter.getHealth());
@@ -170,7 +168,7 @@ public class App {
         veterinarian.setAge(33);
         veterinarian.setCabinet(1);
         veterinarian.setGender("Male");
-        veterinarian.gainCash(200,50);
+        veterinarian.gainCash(200, 50);
         System.out.println(veterinarian.getName());
 
         Animal animal5 = new Animal("");
@@ -185,8 +183,10 @@ public class App {
 
         System.out.println("Animal name");
         Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
-        System.out.println("Input from user: " + text);
+        String dogBarking = scanner.nextLine();
+        System.out.println("Input from user: " + dogBarking);
+
+
 
 
     }

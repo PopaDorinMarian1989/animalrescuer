@@ -2,13 +2,13 @@ package org.fasttrackit;
 
 public class Veterinarian {
 
-   private String name;
-   private String specialization;
-   private String namaeOfFavoriteFoods;
-   private double priceConsultation;
-   private double age;
-   private int cabinet;
-   private String gender;
+    private String name;
+    private String specialization;
+    private String namaeOfFavoriteFoods;
+    private double priceConsultation;
+    private double age;
+    private int cabinet;
+    private String gender;
     //has-a relationship
     Nurse nurse;
     Adopter adopter;
@@ -70,10 +70,10 @@ public class Veterinarian {
         this.gender = gender;
     }
 
-    public double gainCash (double treatment, double priceConsultation ){
-        System.out.println(name +"is getMoney with" +treatment + priceConsultation);
-        double gainCash = treatment +   priceConsultation;
-        System.out.println("GainCash"  +gainCash);
+    public double gainCash(double treatment, double priceConsultation) {
+        System.out.println(name + "is getMoney with" + treatment + priceConsultation);
+        double gainCash = treatment + priceConsultation;
+        System.out.println("GainCash" + gainCash);
         priceConsultation += gainCash;
 
         return gainCash;

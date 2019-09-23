@@ -1,13 +1,11 @@
 package org.fasttrackit;
 
-public class Game  {
+public class Game {
 
 
-   private Adopter adopter;
-   private Animal animal;
-   private Veterinarian veterinarian;
-
-
+    private Adopter adopter;
+    private Animal animal;
+    private Veterinarian veterinarian;
 
 
 }

@@ -3,12 +3,16 @@ package org.fasttrackit;
 import java.util.Date;
 
 public class AnimalFood {
+    private static int totalCount;
+    private String name;
+    private double price;
+    private double amount;
+    private boolean availability;
+    private Date expirationDate;
 
-   private String name;
-   private double price;
-   private double amount;
-   private boolean availability;
-   private Date expirationDate;
+    public AnimalFood() {
+        totalCount++;
+    }
 
     public String getName() {
         return name;
@@ -48,5 +52,9 @@ public class AnimalFood {
 
     public void setExpirationDate(Date expirationDate) {
         this.expirationDate = expirationDate;
+    }
+
+    public static int getTotalCount() {
+        return totalCount;
     }
 }

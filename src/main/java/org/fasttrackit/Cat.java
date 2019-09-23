@@ -3,10 +3,12 @@ package org.fasttrackit;
 import java.time.LocalDateTime;
 
 public class Cat extends Animal {
-   private String color;
-   private String gender;
-   private String breed;
-   private String size;
+    private String color;
+    private String gender;
+    private String breed;
+    private String size;
+    private int waterProcentage;
+    private int pawsCount;
 
     public Cat(String name) {
         super(name);
@@ -42,5 +44,21 @@ public class Cat extends Animal {
 
     public void setSize(String size) {
         this.size = size;
+    }
+
+    public int getWaterProcentage() {
+        return waterProcentage;
+    }
+
+    public void setWaterProcentage(int waterProcentage) {
+        this.waterProcentage = waterProcentage;
+    }
+
+    public int getPawsCount() {
+        return pawsCount;
+    }
+
+    public void setPawsCount(int pawsCount) {
+        this.pawsCount = pawsCount;
     }
 }

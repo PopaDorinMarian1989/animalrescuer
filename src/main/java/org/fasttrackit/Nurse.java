@@ -1,11 +1,11 @@
 package org.fasttrackit;
 
-public class Nurse  {
+public class Nurse {
 
-   private String name;
-   private double age;
-   private double health;
-   private String gender;
+    private String name;
+    private double age;
+    private double health;
+    private String gender;
 
     public String getName() {
         return name;

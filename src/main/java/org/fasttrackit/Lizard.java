@@ -4,10 +4,10 @@ import java.time.LocalDateTime;
 
 public class Lizard extends Animal {
 
-   private String color;
-   private String gender;
-   private String breed;
-   private String locationOfBirth;
+    private String color;
+    private String gender;
+    private String breed;
+    private String locationOfBirth;
 
     public Lizard(String name) {
         super(name);
@@ -44,6 +44,7 @@ public class Lizard extends Animal {
     public void setLocationOfBirth(String locationOfBirth) {
         this.locationOfBirth = locationOfBirth;
     }
+
 }
 
 

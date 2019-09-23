@@ -3,10 +3,11 @@ package org.fasttrackit;
 import java.time.LocalDateTime;
 
 public class Dog extends Animal {
-   private String color;
-   private String gender;
-   private String breed;
-   private String typeOfDog;
+    private String color;
+    private String gender;
+    private String breed;
+    private String typeOfDog;
+
 
     public Dog(String name) {
         super(name);
@@ -43,4 +44,5 @@ public class Dog extends Animal {
     public void setTypeOfDog(String typeOfDog) {
         this.typeOfDog = typeOfDog;
     }
+
 }
