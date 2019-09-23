@@ -1,6 +1,5 @@
 package org.fasttrackit;
 
-import sun.jvm.hotspot.gc.shared.Generation;
 
 import javax.lang.model.element.Name;
 import java.util.jar.Attributes;
@@ -90,6 +89,24 @@ public class Animal {
 
     public void setAge(double age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", namaeOfFavoriteFoods='" + namaeOfFavoriteFoods + '\'' +
+                ", nameOfRecreationActivity='" + nameOfRecreationActivity + '\'' +
+                ", health=" + health +
+                ", hunger=" + hunger +
+                ", moodLevel=" + moodLevel +
+                ", age=" + age +
+                ", activity=" + activity +
+                ", toy=" + toy +
+                ", game=" + game +
+                ", animalFood=" + animalFood +
+                '}';
     }
 }
 

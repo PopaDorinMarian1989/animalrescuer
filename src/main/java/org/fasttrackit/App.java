@@ -37,6 +37,7 @@ public class App {
         animalFood.setAmount(1);
         animalFood.setExpirationDate(LocalDateTime);
         animal.animalFood = animalFood;
+        System.out.println("Animal object: " + animal.toString());
 
         System.out.println(animal.getName());
         System.out.println(animal.getHealth());
