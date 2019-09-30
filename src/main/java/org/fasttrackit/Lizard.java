@@ -45,6 +45,11 @@ public class Lizard extends Animal {
         this.locationOfBirth = locationOfBirth;
     }
 
+    @Override
+    public void isHappyAnimals() {
+        System.out.println(getName() + "sssss");
+        super.isHappyAnimals();
+    }
 }
 
 

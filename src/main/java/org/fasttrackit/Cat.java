@@ -61,4 +61,10 @@ public class Cat extends Animal {
     public void setPawsCount(int pawsCount) {
         this.pawsCount = pawsCount;
     }
+
+    @Override
+    public void isHappyAnimals() {
+        System.out.println(getName() + "pores");
+        super.isHappyAnimals();
+    }
 }

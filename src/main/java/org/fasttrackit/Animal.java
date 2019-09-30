@@ -9,9 +9,6 @@ public class Animal {
 
     private String name;
 
-    public Animal(String name) {
-        this.name = name;
-    }
 
     private double weight;
     private String namaeOfFavoriteFoods;
@@ -20,12 +17,25 @@ public class Animal {
     private double hunger;
     private boolean moodLevel;
     private double age;
+    int happy;
+
+    public Animal(String name) {
+        this.name = name;
+    }
 
     //has-a relationship
     Activity activity;
     Toy toy;
     Game game;
     AnimalFood animalFood;
+
+    public int getHappy() {
+        return happy;
+    }
+
+    public void setHappy(int happy) {
+        this.happy = happy;
+    }
 
     public String getName() {
         return name;
@@ -91,24 +101,10 @@ public class Animal {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Animal{" +
-                "name='" + name + '\'' +
-                ", weight=" + weight +
-                ", namaeOfFavoriteFoods='" + namaeOfFavoriteFoods + '\'' +
-                ", nameOfRecreationActivity='" + nameOfRecreationActivity + '\'' +
-                ", health=" + health +
-                ", hunger=" + hunger +
-                ", moodLevel=" + moodLevel +
-                ", age=" + age +
-                ", activity=" + activity +
-                ", toy=" + toy +
-                ", game=" + game +
-                ", animalFood=" + animalFood +
-                '}';
+
+    public void isHappyAnimals() {
+        if (getHappy() == 80) {
+        }
+
     }
 }
-
-
-

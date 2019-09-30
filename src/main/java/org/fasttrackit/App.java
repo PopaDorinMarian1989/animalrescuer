@@ -19,6 +19,7 @@ public class App {
         animal.setNameOfRecreationActivity("Fetc");
         animal.setAge(3);
         animal.setAge(13);
+        animal.setHappy(86);
 
         Activity activity = new Activity();
         activity.setName("Running");
@@ -186,6 +187,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         String dogBarking = scanner.nextLine();
         System.out.println("Input from user: " + dogBarking);
+        animal.isHappyAnimals();
 
 
 
