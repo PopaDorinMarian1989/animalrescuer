@@ -18,8 +18,18 @@ public class App {
         animal.setNamaeOfFavoriteFoods("Chap");
         animal.setNameOfRecreationActivity("Fetc");
         animal.setAge(3);
-        animal.setAge(13);
         animal.setHappy(86);
+
+        Adopter adopter3 = new Adopter();
+        adopter3.setName("Vasile");
+        animal.adopter = adopter3;
+
+        Veterinarian veterinarian2 = new Veterinarian();
+        veterinarian2.setName("Alin");
+        animal.veterinarian = veterinarian2;
+
+        Game game = new Game();
+        animal.game = game;
 
         Activity activity = new Activity();
         activity.setName("Running");
@@ -45,53 +55,137 @@ public class App {
         System.out.println(animal.getHunger());
         System.out.println(animal.isMoodLevel());
         System.out.println(animal.getNameOfRecreationActivity());
+        System.out.println(animal.getHappy());
+        System.out.println(animal.getNamaeOfFavoriteFoods());
+        System.out.println(animal.getAge());
+        System.out.println(adopter3.getName());
+        System.out.println(veterinarian2.getName());
+        System.out.println(game.getClass());
+        System.out.println(activity.getName());
+        System.out.println(activity.getPlace());
+        System.out.println(toy.getName());
+        System.out.println(toy.getAmount());
+        System.out.println(toy.getPrice());
+        System.out.println(animalFood.getName());
+        System.out.println(animalFood.getPrice());
+        System.out.println(animalFood.getAmount());
+        System.out.println(animalFood.getExpirationDate());
+        System.out.println(animalFood.isAvailability());
         System.out.println(animal.activity);
         System.out.println(animal.toy);
         System.out.println(animal.game);
         System.out.println(animal.animalFood);
+        System.out.println(animal.adopter);
+        System.out.println(animal.veterinarian);
 
-
-        Activity activity2 = new Activity();
-        activity.setName("Rolling");
-        Toy toy2 = new Toy();
-        toy.setName("Ball");
-        toy.setAmount(5);
-        toy.setPrice(150);
 
         Animal animal2 = new Animal("");
         animal2.setName("Titica");
-//        animal.name = "Ulise";
-//        animal.name = null;
-
         animal2.setNamaeOfFavoriteFoods("Pedigree");
         animal2.setNameOfRecreationActivity("Frisbee");
         animal2.setAge(5);
         animal2.setWeight(5);
 
-        animal2.activity = activity;
-        animal2.toy = toy;
+        Game game2 = new Game();
+        animal2.game = game2;
+
+        Activity activity2 = new Activity();
+        activity.setName("Rolling");
+        activity.setPlace("Yard");
+        animal2.activity = activity2;
+
+        Toy toy2 = new Toy();
+        toy.setName("Ball");
+        toy.setAmount(5);
+        toy.setPrice(150);
+        animal2.toy = toy2;
+//        animal.name = "Ulise";
+//        animal.name = null;
+        AnimalFood animalFood2 = new AnimalFood();
+        animalFood.setName("Kaufland");
+        animalFood.setPrice(2);
+        animalFood.setAmount(2);
+        animalFood.setExpirationDate(LocalDateTime);
+        animal.animalFood = animalFood2;
 
         //concatenation
-        System.out.println("Animal2 name: " + animal2.getName());
-        System.out.println("Animal1 name: " + animal.getName());
+        //System.out.println("Animal2 name: " + animal2.getName());
+        //System.out.println("Animal1 name: " + animal.getName());
 
         System.out.println(animal2.getName());
         System.out.println(animal2.getHealth());
-        System.out.println(animal2.getHealth());
         System.out.println(animal2.isMoodLevel());
         System.out.println(animal2.getNameOfRecreationActivity());
+        System.out.println(animal2.getAge());
+        System.out.println(animal2.getWeight());
+        System.out.println(animal2.getNamaeOfFavoriteFoods());
+        System.out.println(game2.getClass());
+        System.out.println(activity2.getName());
+        System.out.println(activity2.getPlace());
+        System.out.println(toy2.getName());
+        System.out.println(toy2.getAmount());
+        System.out.println(toy2.getPrice());
+        System.out.println(animalFood2.getName());
+        System.out.println(animalFood2.getPrice());
+        System.out.println(animalFood2.getAmount());
+        System.out.println(animalFood2.getExpirationDate());
+        System.out.println(animalFood2.isAvailability());
+        System.out.println(animal2.activity);
+        System.out.println(animal2.toy);
+        System.out.println(animal2.game);
+        System.out.println(animal2.animalFood);
+
 
         Animal animal3 = new Animal("");
-        animal3.setName("Luffi");
+        animal3.setName("Luci");
         animal3.setNamaeOfFavoriteFoods("Worms");
         animal3.setNameOfRecreationActivity("Sleep");
         animal3.setAge(1);
         animal3.setWeight(1);
-        System.out.println(animal3.getName());
+
+        Game game3 = new Game();
+        animal3.game = game3;
+
+        AnimalFood animalFood3 = new AnimalFood();
+        animalFood.setName("Issa");
+        animalFood.setPrice(10);
+        animalFood.setAmount(5);
+        animalFood.setExpirationDate(LocalDateTime);
+        animal.animalFood = animalFood2;
+
+        Activity activity3 = new Activity();
+        activity.setName("Football");
+        activity.setPlace("CourtYard");
+        animal3.activity = activity3;
+
+        Toy toy3 = new Toy();
+        toy.setName("SoccerBall");
+        toy.setAmount(3);
+        toy.setPrice(45);
+        animal3.toy = toy3;
+
         System.out.println(animal3.getHealth());
         System.out.println(animal3.getHunger());
         System.out.println(animal3.isMoodLevel());
         System.out.println(animal3.getNameOfRecreationActivity());
+        System.out.println(animal3.getAge());
+        System.out.println(animal3.getWeight());
+        System.out.println(animal3.getNamaeOfFavoriteFoods());
+        System.out.println(activity3.getName());
+        System.out.println(activity3.getPlace());
+        System.out.println(toy3.getName());
+        System.out.println(toy3.getAmount());
+        System.out.println(toy3.getPrice());
+        System.out.println(game3.getClass());
+        System.out.println(animalFood3.getName());
+        System.out.println(animalFood3.getPrice());
+        System.out.println(animalFood3.getAmount());
+        System.out.println(animalFood3.getExpirationDate());
+        System.out.println(animalFood3.isAvailability());
+        System.out.println(animal3.activity);
+        System.out.println(animal3.toy);
+        System.out.println(animal3.game);
+        System.out.println(animal3.animalFood);
 
 
         Dog dog = new Dog("");
@@ -99,6 +193,8 @@ public class App {
         dog.setGender("Male");
         dog.setBreed("Jindo");
         dog.setTypeOfDog("Hunting");
+
+        System.out.println(dog.getName());
         System.out.println(dog.getColor());
         System.out.println(dog.getGender());
         System.out.println(dog.getBreed());
@@ -112,15 +208,19 @@ public class App {
         cat.setWaterProcentage(30);
         cat.setPawsCount(4);
 
+        System.out.println(cat.getName());
         System.out.println(cat.getColor());
         System.out.println(cat.getGender());
         System.out.println(cat.getBreed());
         System.out.println(cat.getSize());
+        System.out.println(cat.getWaterProcentage());
+        System.out.println(cat.getPawsCount());
 
         Lizard lizard = new Lizard("");
         lizard.setColor("Green");
         lizard.setGender("Male");
         lizard.setLocationOfBirth("Asia");
+        System.out.println(lizard.getName());
         System.out.println(lizard.getColor());
         System.out.println(lizard.getGender());
         System.out.println(lizard.getLocationOfBirth());
@@ -133,21 +233,25 @@ public class App {
         adopter.setAge(30);
         adopter.setGender("Male");
 
-        Toy toy3 = new Toy();
+        Toy toy4 = new Toy();
         toy.setName("Bone");
         toy.setAmount(4);
         toy.setPrice(120);
         adopter.toy = toy;
-        Activity activity3 = new Activity();
+
+        Activity activity4 = new Activity();
         activity.setName("Sleep");
         activity.setPlace("Home");
         adopter.activity = activity;
+
         Animal animal4 = new Animal("");
         animal.setName("Brutus");
         adopter.animal = animal;
+
         Veterinarian veterinarian1 = new Veterinarian();
         veterinarian1.setName("Dorel");
         adopter.veterinarian = veterinarian1;
+
         Nurse nurse = new Nurse();
         nurse.setName("Ioana");
         nurse.setAge(34);
@@ -161,6 +265,26 @@ public class App {
         System.out.println(adopter.getHunger());
         System.out.println(adopter.isMoodLevel());
         System.out.println(adopter.getNameOfRecreationActivity());
+        System.out.println(adopter.getAge());
+        System.out.println(adopter.getGender());
+        System.out.println(adopter.getCash());
+        System.out.println(adopter.getNamaeOfFavoriteFoods());
+        System.out.println(activity4.getName());
+        System.out.println(activity4.getPlace());
+        System.out.println(animal4.getName());
+        System.out.println(veterinarian1.getName());
+        System.out.println(nurse.getName());
+        System.out.println(nurse.getAge());
+        System.out.println(nurse.getHealth());
+        System.out.println(nurse.getGender());
+        System.out.println(toy4.getName());
+        System.out.println(toy4.getPrice());
+        System.out.println(toy4.getAmount());
+        System.out.println(adopter.activity);
+        System.out.println(adopter.animal);
+        System.out.println(adopter.nurse);
+        System.out.println(adopter.toy);
+        System.out.println(adopter.veterinarian);
 
         Veterinarian veterinarian = new Veterinarian();
         veterinarian.setName("Adrian");
@@ -171,17 +295,37 @@ public class App {
         veterinarian.setCabinet(1);
         veterinarian.setGender("Male");
         veterinarian.gainCash(200, 50);
-        System.out.println(veterinarian.getName());
+
+        Nurse nurse1 = new Nurse();
+        nurse1.setName("Alina");
+        nurse1.setGender("Female");
+        nurse1.setAge(21);
+        veterinarian.nurse = nurse1;
+
+        Adopter adopter1 = new Adopter();
+        adopter.setName("Simona");
+        veterinarian.adopter = adopter;
 
         Animal animal5 = new Animal("");
         animal.setName("Linda");
         veterinarian.animal = animal;
-        Adopter adopter1 = new Adopter();
-        adopter.setName("Simina");
-        veterinarian.adopter = adopter;
-        Nurse nurse1 = new Nurse();
-        nurse.setName("Adriana");
-        veterinarian.nurse = nurse;
+
+        System.out.println(veterinarian.getName());
+        System.out.println(veterinarian.getSpecialization());
+        System.out.println(veterinarian.getNamaeOfFavoriteFoods());
+        System.out.println(veterinarian.getPriceConsultation());
+        System.out.println(veterinarian.getAge());
+        System.out.println(veterinarian.getCabinet());
+        System.out.println(veterinarian.getGender());
+        System.out.println(adopter1.getName());
+        System.out.println(animal5.getName());
+        System.out.println(nurse1.getName());
+        System.out.println(nurse1.getHealth());
+        System.out.println(nurse1.getGender());
+        System.out.println(nurse1.getAge());
+        System.out.println(veterinarian.nurse);
+        System.out.println(veterinarian.adopter);
+        System.out.println(veterinarian.animal);
 
         System.out.println("Animal name");
         Scanner scanner = new Scanner(System.in);

@@ -17,7 +17,7 @@ public class Animal {
     private double hunger;
     private boolean moodLevel;
     private double age;
-    int happy;
+    private int happy;
 
     public Animal(String name) {
         this.name = name;
@@ -28,6 +28,8 @@ public class Animal {
     Toy toy;
     Game game;
     AnimalFood animalFood;
+    Adopter adopter;
+    Veterinarian veterinarian;
 
     public int getHappy() {
         return happy;
