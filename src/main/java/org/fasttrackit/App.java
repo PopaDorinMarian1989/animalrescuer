@@ -29,6 +29,7 @@ public class App {
         animal.veterinarian = veterinarian2;
 
         Game game = new Game();
+        game.start();
         animal.game = game;
 
         Toy toy = new Toy();
@@ -289,6 +290,7 @@ public class App {
         String dogBarking = scanner.nextLine();
         System.out.println("Input from user: " + dogBarking);
         animal.isHappyAnimals();
+
 
 
 
