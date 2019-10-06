@@ -13,18 +13,19 @@ public class Animal {
     private double weight;
     private String namaeOfFavoriteFoods;
     private String nameOfRecreationActivity;
-    private double health;
-    private double hunger;
-    private boolean moodLevel;
+    private int health;
+    private int hunger;
+    private int moodLevel;
     private double age;
     private int happy;
+    private String activity;
+    private String favoriteActivity;
 
     public Animal(String name) {
         this.name = name;
     }
 
     //has-a relationship
-    Activity activity;
     Toy toy;
     Game game;
     AnimalFood animalFood;
@@ -71,27 +72,27 @@ public class Animal {
         this.nameOfRecreationActivity = nameOfRecreationActivity;
     }
 
-    public double getHealth() {
+    public int getHealth() {
         return health;
     }
 
-    public void setHealth(double health) {
+    public void setHealth(int health) {
         this.health = health;
     }
 
-    public double getHunger() {
+    public int getHunger() {
         return hunger;
     }
 
-    public void setHunger(double hunger) {
+    public void setHunger(int hunger) {
         this.hunger = hunger;
     }
 
-    public boolean isMoodLevel() {
+    public int getMoodLevel() {
         return moodLevel;
     }
 
-    public void setMoodLevel(boolean moodLevel) {
+    public void setMoodLevel(int moodLevel) {
         this.moodLevel = moodLevel;
     }
 
@@ -103,6 +104,21 @@ public class Animal {
         this.age = age;
     }
 
+    public String getActivity() {
+        return activity;
+    }
+
+    public void setActivity(String activity) {
+        this.activity = activity;
+    }
+
+    public String getFavoriteActivity() {
+        return favoriteActivity;
+    }
+
+    public void setFavoriteActivity(String favoriteActivity) {
+        this.favoriteActivity = favoriteActivity;
+    }
 
     public void isHappyAnimals() { if (getHappy() > 80) ;
     }

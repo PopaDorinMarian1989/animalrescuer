@@ -5,8 +5,7 @@ public class Adopter {
     private double cash;
     private String namaeOfFavoriteFoods;
     private String nameOfRecreationActivity;
-    private double health;
-    private double hunger;
+
     private boolean moodLevel;
     private double age;
     private String gender;
@@ -16,6 +15,37 @@ public class Adopter {
     Animal animal;
     Activity activity;
     Toy toy;
+    public void feedAnimal(Animal animal, AnimalFood food) {
+        int i = animal.getHunger();
+        if (i > 80) {
+            System.out.println(animal.getName() + " is satiated.");
+        } else if (food.getName() == animal.getNamaeOfFavoriteFoods() && i < 80 && animal.getHappy() < 95) {
+            System.out.println(name + " just added " + food.getName() + " food to " + animal.getName()
+                    + ". Because this is favorite meal of " + animal.getName() + " , the happy procentage was increased.");
+            animal.setHunger(i + 20);
+            animal.setHappy(animal.getHappy() + 5);
+        } else {
+            System.out.println(name + " just added " + food.getName() + " food to " + animal.getName());
+            animal.setHunger(i + 20);
+        }
+    }
+
+    public void playWithAnimal(Animal animal) {
+        int i = animal.getHappy();
+        if (i > 80) {
+            System.out.println(animal.getName() + " is already happy.");
+        } else if (animal.getActivity() == animal.getFavoriteActivity() && i <= 80 && animal.getMoodLevel() <= 90) {
+            System.out.println(name + " just played " + animal.getActivity() + " with " + animal.getName()
+                    + ". Because this is favorite activity of " + animal.getName() + ", the mood level was increased.");
+            animal.setHappy(i + 20);
+            animal.setMoodLevel(animal.getMoodLevel() + 10);
+        } else {
+            System.out.println(name + "just played " + animal.getActivity() + "with " + animal.getName());
+            animal.setHappy(i + 20);
+        }}
+
+
+
 
 
     public String getName() {
@@ -48,22 +78,6 @@ public class Adopter {
 
     public void setNameOfRecreationActivity(String nameOfRecreationActivity) {
         this.nameOfRecreationActivity = nameOfRecreationActivity;
-    }
-
-    public double getHealth() {
-        return health;
-    }
-
-    public void setHealth(double health) {
-        this.health = health;
-    }
-
-    public double getHunger() {
-        return hunger;
-    }
-
-    public void setHunger(double hunger) {
-        this.hunger = hunger;
     }
 
     public boolean isMoodLevel() {
