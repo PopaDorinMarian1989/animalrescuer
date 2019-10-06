@@ -188,11 +188,14 @@ public class App {
         System.out.println(animal3.animalFood);
 
 
-        Dog dog = new Dog("");
+        Dog dog = new Dog("Thor");
         dog.setColor("Black");
         dog.setGender("Male");
         dog.setBreed("Jindo");
         dog.setTypeOfDog("Hunting");
+        dog.setHappy(25);
+        dog.isHappyAnimals();
+
 
         System.out.println(dog.getName());
         System.out.println(dog.getColor());
@@ -200,13 +203,16 @@ public class App {
         System.out.println(dog.getBreed());
         System.out.println(dog.getTypeOfDog());
 
-        Cat cat = new Cat("");
+        Cat cat = new Cat("Mitzi");
         cat.setColor("Red");
         cat.setGender("Female");
         cat.setBreed("Bombay");
         cat.setSize("Small");
         cat.setWaterProcentage(30);
         cat.setPawsCount(4);
+        cat.setHappy(95);
+        cat.isHappyAnimals();
+
 
         System.out.println(cat.getName());
         System.out.println(cat.getColor());
@@ -216,10 +222,13 @@ public class App {
         System.out.println(cat.getWaterProcentage());
         System.out.println(cat.getPawsCount());
 
-        Lizard lizard = new Lizard("");
+        Lizard lizard = new Lizard("Lizuca");
         lizard.setColor("Green");
         lizard.setGender("Male");
         lizard.setLocationOfBirth("Asia");
+        lizard.setHappy(50);
+        lizard.isHappyAnimals();
+
         System.out.println(lizard.getName());
         System.out.println(lizard.getColor());
         System.out.println(lizard.getGender());

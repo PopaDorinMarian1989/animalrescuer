@@ -10,7 +10,7 @@ public class Dog extends Animal {
 
     @Override
     public void isHappyAnimals() {
-        System.out.println(getName() + "barcks");
+        System.out.println(getName() + " barcks ");
         super.isHappyAnimals();
     }
 

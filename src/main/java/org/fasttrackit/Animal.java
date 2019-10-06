@@ -104,9 +104,8 @@ public class Animal {
     }
 
 
-    public void isHappyAnimals() {
-        if (getHappy() == 80) {
-        }
-
+    public void isHappyAnimals() { if (getHappy() > 80) ;
     }
+
 }
+

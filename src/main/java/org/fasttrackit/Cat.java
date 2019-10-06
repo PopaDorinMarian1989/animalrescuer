@@ -64,7 +64,7 @@ public class Cat extends Animal {
 
     @Override
     public void isHappyAnimals() {
-        System.out.println(getName() + "pores");
+        System.out.println(getName() + " pores ");
         super.isHappyAnimals();
     }
 }

@@ -9,8 +9,7 @@ public class Lizard extends Animal {
     private String breed;
     private String locationOfBirth;
 
-    public Lizard(String name) {
-        super(name);
+    public Lizard(String name) { super(name);
     }
 
     public String getColor() {
@@ -47,9 +46,10 @@ public class Lizard extends Animal {
 
     @Override
     public void isHappyAnimals() {
-        System.out.println(getName() + "sssss");
+        System.out.println(getName() + " is SSSS ");
         super.isHappyAnimals();
     }
 }
+
 
 
