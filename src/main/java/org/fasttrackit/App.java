@@ -188,51 +188,25 @@ public class App {
         System.out.println(animal3.animalFood);
 
 
-        Dog dog = new Dog("Thor");
-        dog.setColor("Black");
-        dog.setGender("Male");
-        dog.setBreed("Jindo");
-        dog.setTypeOfDog("Hunting");
+        Animal dog = new Dog("Thor");
         dog.setHappy(35);
         dog.isHappyAnimals();
 
 
         System.out.println(dog.getName());
-        System.out.println(dog.getColor());
-        System.out.println(dog.getGender());
-        System.out.println(dog.getBreed());
-        System.out.println(dog.getTypeOfDog());
 
-        Cat cat = new Cat("Mitzi");
-        cat.setColor("Red");
-        cat.setGender("Female");
-        cat.setBreed("Bombay");
-        cat.setSize("Small");
-        cat.setWaterProcentage(30);
-        cat.setPawsCount(4);
+        Animal cat = new Cat("Mitzi");
         cat.setHappy(95);
         cat.isHappyAnimals();
 
 
         System.out.println(cat.getName());
-        System.out.println(cat.getColor());
-        System.out.println(cat.getGender());
-        System.out.println(cat.getBreed());
-        System.out.println(cat.getSize());
-        System.out.println(cat.getWaterProcentage());
-        System.out.println(cat.getPawsCount());
 
-        Lizard lizard = new Lizard("Lizuca");
-        lizard.setColor("Green");
-        lizard.setGender("Male");
-        lizard.setLocationOfBirth("Asia");
+        Animal lizard = new Lizard("Lizuca");
         lizard.setHappy(50);
         lizard.isHappyAnimals();
 
         System.out.println(lizard.getName());
-        System.out.println(lizard.getColor());
-        System.out.println(lizard.getGender());
-        System.out.println(lizard.getLocationOfBirth());
 
         Adopter adopter = new Adopter();
         adopter.setName("Dorin");
