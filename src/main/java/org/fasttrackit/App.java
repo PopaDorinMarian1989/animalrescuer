@@ -31,11 +31,6 @@ public class App {
         Game game = new Game();
         animal.game = game;
 
-        Activity activity = new Activity();
-        activity.setName("Running");
-        activity.setPlace("Park");
-        animal.activity = activity;
-
         Toy toy = new Toy();
         toy.setName("Frisbee");
         toy.setAmount(3);
@@ -53,7 +48,7 @@ public class App {
         System.out.println(animal.getName());
         System.out.println(animal.getHealth());
         System.out.println(animal.getHunger());
-        System.out.println(animal.isMoodLevel());
+        System.out.println(animal.getMoodLevel());
         System.out.println(animal.getNameOfRecreationActivity());
         System.out.println(animal.getHappy());
         System.out.println(animal.getNamaeOfFavoriteFoods());
@@ -61,8 +56,6 @@ public class App {
         System.out.println(adopter3.getName());
         System.out.println(veterinarian2.getName());
         System.out.println(game.getClass());
-        System.out.println(activity.getName());
-        System.out.println(activity.getPlace());
         System.out.println(toy.getName());
         System.out.println(toy.getAmount());
         System.out.println(toy.getPrice());
@@ -71,7 +64,6 @@ public class App {
         System.out.println(animalFood.getAmount());
         System.out.println(animalFood.getExpirationDate());
         System.out.println(animalFood.isAvailability());
-        System.out.println(animal.activity);
         System.out.println(animal.toy);
         System.out.println(animal.game);
         System.out.println(animal.animalFood);
@@ -88,11 +80,6 @@ public class App {
 
         Game game2 = new Game();
         animal2.game = game2;
-
-        Activity activity2 = new Activity();
-        activity.setName("Rolling");
-        activity.setPlace("Yard");
-        animal2.activity = activity2;
 
         Toy toy2 = new Toy();
         toy.setName("Ball");
@@ -114,14 +101,12 @@ public class App {
 
         System.out.println(animal2.getName());
         System.out.println(animal2.getHealth());
-        System.out.println(animal2.isMoodLevel());
+        System.out.println(animal2.getMoodLevel());
         System.out.println(animal2.getNameOfRecreationActivity());
         System.out.println(animal2.getAge());
         System.out.println(animal2.getWeight());
         System.out.println(animal2.getNamaeOfFavoriteFoods());
         System.out.println(game2.getClass());
-        System.out.println(activity2.getName());
-        System.out.println(activity2.getPlace());
         System.out.println(toy2.getName());
         System.out.println(toy2.getAmount());
         System.out.println(toy2.getPrice());
@@ -130,7 +115,6 @@ public class App {
         System.out.println(animalFood2.getAmount());
         System.out.println(animalFood2.getExpirationDate());
         System.out.println(animalFood2.isAvailability());
-        System.out.println(animal2.activity);
         System.out.println(animal2.toy);
         System.out.println(animal2.game);
         System.out.println(animal2.animalFood);
@@ -153,11 +137,6 @@ public class App {
         animalFood.setExpirationDate(LocalDateTime);
         animal.animalFood = animalFood2;
 
-        Activity activity3 = new Activity();
-        activity.setName("Football");
-        activity.setPlace("CourtYard");
-        animal3.activity = activity3;
-
         Toy toy3 = new Toy();
         toy.setName("SoccerBall");
         toy.setAmount(3);
@@ -166,13 +145,11 @@ public class App {
 
         System.out.println(animal3.getHealth());
         System.out.println(animal3.getHunger());
-        System.out.println(animal3.isMoodLevel());
+        System.out.println(animal3.getMoodLevel());
         System.out.println(animal3.getNameOfRecreationActivity());
         System.out.println(animal3.getAge());
         System.out.println(animal3.getWeight());
         System.out.println(animal3.getNamaeOfFavoriteFoods());
-        System.out.println(activity3.getName());
-        System.out.println(activity3.getPlace());
         System.out.println(toy3.getName());
         System.out.println(toy3.getAmount());
         System.out.println(toy3.getPrice());
@@ -182,7 +159,6 @@ public class App {
         System.out.println(animalFood3.getAmount());
         System.out.println(animalFood3.getExpirationDate());
         System.out.println(animalFood3.isAvailability());
-        System.out.println(animal3.activity);
         System.out.println(animal3.toy);
         System.out.println(animal3.game);
         System.out.println(animal3.animalFood);
@@ -222,7 +198,7 @@ public class App {
         toy.setPrice(120);
         adopter.toy = toy;
 
-        Activity activity4 = new Activity();
+        Activity activity = new Activity();
         activity.setName("Sleep");
         activity.setPlace("Home");
         adopter.activity = activity;
@@ -244,16 +220,14 @@ public class App {
         adopter.money(300, 100);
 
         System.out.println(adopter.getName());
-        System.out.println(adopter.getHealth());
-        System.out.println(adopter.getHunger());
         System.out.println(adopter.isMoodLevel());
         System.out.println(adopter.getNameOfRecreationActivity());
         System.out.println(adopter.getAge());
         System.out.println(adopter.getGender());
         System.out.println(adopter.getCash());
         System.out.println(adopter.getNamaeOfFavoriteFoods());
-        System.out.println(activity4.getName());
-        System.out.println(activity4.getPlace());
+        System.out.println(activity.getName());
+        System.out.println(activity.getPlace());
         System.out.println(animal4.getName());
         System.out.println(veterinarian1.getName());
         System.out.println(nurse.getName());
