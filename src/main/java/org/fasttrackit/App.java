@@ -193,7 +193,7 @@ public class App {
         dog.setGender("Male");
         dog.setBreed("Jindo");
         dog.setTypeOfDog("Hunting");
-        dog.setHappy(25);
+        dog.setHappy(35);
         dog.isHappyAnimals();
 
 
