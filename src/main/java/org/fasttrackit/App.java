@@ -42,7 +42,7 @@ public class App {
         animalFood.setName("Chap");
         animalFood.setPrice(13);
         animalFood.setAmount(1);
-        animalFood.setExpirationDate(2020,20,2);
+        animalFood.setExpirationDate(2020, 20, 2);
         animal.animalFood = animalFood;
         System.out.println("Animal object: " + animal.toString());
 
@@ -93,7 +93,7 @@ public class App {
         animalFood.setName("Kaufland");
         animalFood.setPrice(2);
         animalFood.setAmount(2);
-        animalFood.setExpirationDate(2021,21,2);
+        animalFood.setExpirationDate(2021, 21, 2);
         animal.animalFood = animalFood2;
 
         //concatenation
@@ -135,7 +135,7 @@ public class App {
         animalFood.setName("Issa");
         animalFood.setPrice(10);
         animalFood.setAmount(5);
-        animalFood.setExpirationDate(2022,22,2);
+        animalFood.setExpirationDate(2022, 22, 2);
         animal.animalFood = animalFood2;
 
         Toy toy3 = new Toy();
@@ -290,9 +290,6 @@ public class App {
         String dogBarking = scanner.nextLine();
         System.out.println("Input from user: " + dogBarking);
         animal.isHappyAnimals();
-
-
-
 
 
     }

@@ -48,9 +48,10 @@ public class Game {
         gainFood.add(food2);
 
     }
+
     private void displayFood() {
         System.out.println("Available food is: ");
-        for (AnimalFood food: gainFood) {
+        for (AnimalFood food : gainFood) {
             System.out.println(food.getName());
         }
     }

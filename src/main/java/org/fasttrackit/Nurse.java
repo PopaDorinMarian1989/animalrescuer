@@ -7,6 +7,10 @@ public class Nurse {
     private double health;
     private String gender;
 
+    public Nurse(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -38,4 +42,6 @@ public class Nurse {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+
 }

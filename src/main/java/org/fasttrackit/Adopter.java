@@ -5,16 +5,26 @@ public class Adopter {
     private double cash;
     private String namaeOfFavoriteFoods;
     private String nameOfRecreationActivity;
-
     private boolean moodLevel;
     private double age;
     private String gender;
+
     // has-a relationship
     Veterinarian veterinarian;
     Nurse nurse;
     Animal animal;
     Activity activity;
     Toy toy;
+
+
+    public double money(double cash, double spent) {
+        System.out.println(name + "is moneyAvailable with " + cash + spent);
+        double money = cash - spent;
+        System.out.println("Money: " + money);
+        cash += money;
+        return money;
+    }
+
     public void feedAnimal(Animal animal, AnimalFood food) {
         int i = animal.getHunger();
         if (i > 80) {
@@ -42,10 +52,8 @@ public class Adopter {
         } else {
             System.out.println(name + "just played " + animal.getActivity() + "with " + animal.getName());
             animal.setHappy(i + 20);
-        }}
-
-
-
+        }
+    }
 
 
     public String getName() {
@@ -103,22 +111,10 @@ public class Adopter {
     public void setGender(String gender) {
         this.gender = gender;
     }
-    public double money(double cash){
+
+    public double money(double cash) {
         return money(cash, 100);
     }
-
-    public double money(double cash, double spent) {
-
-        System.out.println(name + "is moneyAvailable with " + cash + spent);
-        double money = cash - spent;
-        System.out.println("Money: " + money);
-        cash += money;
-
-
-        return money;
-
-    }
-
 
 
 }

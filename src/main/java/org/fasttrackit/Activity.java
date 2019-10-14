@@ -4,6 +4,15 @@ public class Activity {
     private String name;
     private String place;
 
+    public Activity(String name, String place) {
+        this.name = name;
+        this.place = place;
+    }
+
+    public Activity() {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -19,4 +28,6 @@ public class Activity {
     public void setPlace(String place) {
         this.place = place;
     }
+
+
 }

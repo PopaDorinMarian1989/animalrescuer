@@ -9,7 +9,8 @@ public class Lizard extends Animal {
     private String breed;
     private String locationOfBirth;
 
-    public Lizard(String name) { super(name);
+    public Lizard(String name) {
+        super(name);
     }
 
     public String getColor() {

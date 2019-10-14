@@ -21,16 +21,16 @@ public class Animal {
     private String activity;
     private String favoriteActivity;
 
-    public Animal(String name) {
-        this.name = name;
-    }
-
     //has-a relationship
     Toy toy;
     Game game;
     AnimalFood animalFood;
     Adopter adopter;
     Veterinarian veterinarian;
+
+    public Animal(String name) {
+        this.name = name;
+    }
 
     public int getHappy() {
         return happy;
@@ -120,7 +120,8 @@ public class Animal {
         this.favoriteActivity = favoriteActivity;
     }
 
-    public void isHappyAnimals() { if (getHappy() > 80) ;
+    public void isHappyAnimals() {
+        if (getHappy() > 80) ;
     }
 
 }

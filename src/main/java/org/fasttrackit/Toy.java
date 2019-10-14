@@ -6,6 +6,10 @@ public class Toy {
     private double amount;
     private double price;
 
+    public Toy(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -29,4 +33,6 @@ public class Toy {
     public void setPrice(double price) {
         this.price = price;
     }
+
+
 }

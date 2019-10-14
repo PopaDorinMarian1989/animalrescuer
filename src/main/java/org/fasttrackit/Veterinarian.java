@@ -14,6 +14,10 @@ public class Veterinarian {
     Adopter adopter;
     Animal animal;
 
+    public Veterinarian(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
