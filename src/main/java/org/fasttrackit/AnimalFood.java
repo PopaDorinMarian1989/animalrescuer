@@ -57,4 +57,7 @@ public class AnimalFood {
     public static int getTotalCount() {
         return totalCount;
     }
+
+    public void setExpirationDate(int i, int i1, int i2) {
+    }
 }
