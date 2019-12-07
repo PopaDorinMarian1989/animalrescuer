@@ -60,4 +60,8 @@ public class AnimalFood {
 
     public void setExpirationDate(int i, int i1, int i2) {
     }
+
+    public AnimalFood(String name) {
+        this.name = name;
+    }
 }

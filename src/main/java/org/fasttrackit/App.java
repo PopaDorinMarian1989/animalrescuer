@@ -293,4 +293,12 @@ public class App {
 
 
     }
+
+    public static Date getLocalDateTime() {
+        return LocalDateTime;
+    }
+
+    public static void setLocalDateTime(Date localDateTime) {
+        LocalDateTime = localDateTime;
+    }
 }

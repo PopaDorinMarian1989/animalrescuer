@@ -16,6 +16,10 @@ public class Adopter {
     Activity activity;
     Toy toy;
 
+    public Adopter() {
+
+    }
+
 
     public double money(double cash, double spent) {
         System.out.println(name + "is moneyAvailable with " + cash + spent);
@@ -110,6 +114,10 @@ public class Adopter {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    public Adopter(String name) {
+        this.name = name;
     }
 
     public double money(double cash) {

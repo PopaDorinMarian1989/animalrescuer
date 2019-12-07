@@ -11,6 +11,10 @@ public class Nurse {
         this.name = name;
     }
 
+    public Nurse() {
+
+    }
+
     public String getName() {
         return name;
     }

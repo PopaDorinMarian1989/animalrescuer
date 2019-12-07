@@ -29,5 +29,7 @@ public class Activity {
         this.place = place;
     }
 
-
+    public Activity(String name) {
+        this.name = name;
+    }
 }
