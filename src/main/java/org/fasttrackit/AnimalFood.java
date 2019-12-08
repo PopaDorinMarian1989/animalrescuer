@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class AnimalFood {
     private static int totalCount;
-    private String name;
+    private static String name;
     private double price;
     private double amount;
     private boolean availability;
@@ -14,7 +14,7 @@ public class AnimalFood {
         totalCount++;
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 

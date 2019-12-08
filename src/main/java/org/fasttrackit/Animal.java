@@ -32,6 +32,10 @@ public class Animal {
         this.name = name;
     }
 
+    public Animal() {
+
+    }
+
     public int getHappy() {
         return happy;
     }

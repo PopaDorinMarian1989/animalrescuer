@@ -48,7 +48,7 @@ public class Lizard extends Animal {
     @Override
     public void isHappyAnimals() {
         System.out.println(getName() + " is SSSS ");
-        super.isHappyAnimals();
+
     }
 }
 

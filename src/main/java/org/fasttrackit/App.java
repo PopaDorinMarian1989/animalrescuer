@@ -290,6 +290,8 @@ public class App {
         String dogBarking = scanner.nextLine();
         System.out.println("Input from user: " + dogBarking);
         animal.isHappyAnimals();
+        EntertaimentActivity entertaimentActivity = new EntertaimentActivity();
+                entertaimentActivity.setName("Football");
 
 
     }
@@ -300,5 +302,8 @@ public class App {
 
     public static void setLocalDateTime(Date localDateTime) {
         LocalDateTime = localDateTime;
+
+        Game game = new Game();
+        game.start();
     }
 }
