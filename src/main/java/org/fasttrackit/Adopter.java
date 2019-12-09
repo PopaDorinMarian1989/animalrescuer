@@ -16,9 +16,6 @@ public class Adopter {
     Activity activity;
     Toy toy;
 
-    public Adopter() {
-
-    }
 
 
     public double money(double cash, double spent) {

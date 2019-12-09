@@ -10,9 +10,9 @@ public class AnimalFood {
     private boolean availability;
     private Date expirationDate;
 
-    public AnimalFood() {
-        totalCount++;
-    }
+//    public AnimalFood() {
+//        totalCount++;
+//    }
 
     public static String getName() {
         return name;

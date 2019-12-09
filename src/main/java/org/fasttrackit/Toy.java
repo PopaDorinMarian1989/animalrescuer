@@ -10,9 +10,6 @@ public class Toy {
         this.name = name;
     }
 
-    public Toy() {
-
-    }
 
     public String getName() {
         return name;

@@ -13,33 +13,28 @@ public class App {
 
     public static void main(String[] args) {
 
-        Animal animal = new Animal("");
-        animal.setName("Rex");
+        Animal animal = new Animal("Rex");
         animal.setNamaeOfFavoriteFoods("Chap");
         animal.setNameOfRecreationActivity("Fetc");
         animal.setAge(3);
         animal.setHappy(86);
 
-        Adopter adopter3 = new Adopter();
-        adopter3.setName("Vasile");
+        Adopter adopter3 = new Adopter("Vasile");
         animal.adopter = adopter3;
 
-        Veterinarian veterinarian2 = new Veterinarian();
-        veterinarian2.setName("Alin");
+        Veterinarian veterinarian2 = new Veterinarian("Alin");
         animal.veterinarian = veterinarian2;
 
         Game game = new Game();
         game.start();
         animal.game = game;
 
-        Toy toy = new Toy();
-        toy.setName("Frisbee");
+        Toy toy = new Toy("Frisbee");
         toy.setAmount(3);
         toy.setPrice(130);
         animal.toy = toy;
 
-        AnimalFood animalFood = new AnimalFood();
-        animalFood.setName("Chap");
+        AnimalFood animalFood = new AnimalFood("Chap");
         animalFood.setPrice(13);
         animalFood.setAmount(1);
         animalFood.setExpirationDate(2020, 20, 2);
@@ -82,15 +77,13 @@ public class App {
         Game game2 = new Game();
         animal2.game = game2;
 
-        Toy toy2 = new Toy();
-        toy.setName("Ball");
+        Toy toy2 = new Toy("Ball");
         toy.setAmount(5);
         toy.setPrice(150);
         animal2.toy = toy2;
 //        animal.name = "Ulise";
 //        animal.name = null;
-        AnimalFood animalFood2 = new AnimalFood();
-        animalFood.setName("Kaufland");
+        AnimalFood animalFood2 = new AnimalFood("Kaufland");
         animalFood.setPrice(2);
         animalFood.setAmount(2);
         animalFood.setExpirationDate(2021, 21, 2);
@@ -121,8 +114,7 @@ public class App {
         System.out.println(animal2.animalFood);
 
 
-        Animal animal3 = new Animal("");
-        animal3.setName("Luci");
+        Animal animal3 = new Animal("Luci");
         animal3.setNamaeOfFavoriteFoods("Worms");
         animal3.setNameOfRecreationActivity("Sleep");
         animal3.setAge(1);
@@ -131,15 +123,13 @@ public class App {
         Game game3 = new Game();
         animal3.game = game3;
 
-        AnimalFood animalFood3 = new AnimalFood();
-        animalFood.setName("Issa");
+        AnimalFood animalFood3 = new AnimalFood("Issa");
         animalFood.setPrice(10);
         animalFood.setAmount(5);
         animalFood.setExpirationDate(2022, 22, 2);
         animal.animalFood = animalFood2;
 
-        Toy toy3 = new Toy();
-        toy.setName("SoccerBall");
+        Toy toy3 = new Toy("SoccerBall");
         toy.setAmount(3);
         toy.setPrice(45);
         animal3.toy = toy3;
@@ -185,35 +175,29 @@ public class App {
 
         System.out.println(lizard.getName());
 
-        Adopter adopter = new Adopter();
-        adopter.setName("Dorin");
+        Adopter adopter = new Adopter("Dorin");
         adopter.setCash(2500);
         adopter.setNamaeOfFavoriteFoods("Steak");
         adopter.setNameOfRecreationActivity("Gym");
         adopter.setAge(30);
         adopter.setGender("Male");
 
-        Toy toy4 = new Toy();
-        toy.setName("Bone");
+        Toy toy4 = new Toy("Bone");
         toy.setAmount(4);
         toy.setPrice(120);
         adopter.toy = toy;
 
-        Activity activity = new Activity();
-        activity.setName("Sleep");
+        Activity activity = new Activity("Sleep");
         activity.setPlace("Home");
         adopter.activity = activity;
 
-        Animal animal4 = new Animal("");
-        animal.setName("Brutus");
+        Animal animal4 = new Animal("Brutus");
         adopter.animal = animal;
 
-        Veterinarian veterinarian1 = new Veterinarian();
-        veterinarian1.setName("Dorel");
+        Veterinarian veterinarian1 = new Veterinarian("Dorel");
         adopter.veterinarian = veterinarian1;
 
-        Nurse nurse = new Nurse();
-        nurse.setName("Ioana");
+        Nurse nurse = new Nurse("Ioana");
         nurse.setAge(34);
         nurse.setGender("Female");
         adopter.nurse = nurse;
@@ -244,8 +228,7 @@ public class App {
         System.out.println(adopter.toy);
         System.out.println(adopter.veterinarian);
 
-        Veterinarian veterinarian = new Veterinarian();
-        veterinarian.setName("Adrian");
+        Veterinarian veterinarian = new Veterinarian("Adrian");
         veterinarian.setSpecialization("DomesticAnimal");
         veterinarian.setNamaeOfFavoriteFoods("Pizza");
         veterinarian.setPriceConsultation(100);
@@ -254,18 +237,15 @@ public class App {
         veterinarian.setGender("Male");
         veterinarian.gainCash(200, 50);
 
-        Nurse nurse1 = new Nurse();
-        nurse1.setName("Alina");
+        Nurse nurse1 = new Nurse("Alina");
         nurse1.setGender("Female");
         nurse1.setAge(21);
         veterinarian.nurse = nurse1;
 
-        Adopter adopter1 = new Adopter();
-        adopter.setName("Simona");
+        Adopter adopter1 = new Adopter("Simona");
         veterinarian.adopter = adopter;
 
-        Animal animal5 = new Animal("");
-        animal.setName("Linda");
+        Animal animal5 = new Animal("Linda");
         veterinarian.animal = animal;
 
         System.out.println(veterinarian.getName());

@@ -9,9 +9,7 @@ public class Activity extends EntertaimentActivity {
         this.place = place;
     }
 
-    public Activity() {
 
-    }
 
     public String getName() {
         return name;

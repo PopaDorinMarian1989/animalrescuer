@@ -9,7 +9,7 @@ public class Game {
 
 
     private Adopter adopter;
-    private  Dog dog;
+    private Dog dog;
     private Animal animal;
     private Veterinarian veterinarian;
     private List<AnimalFood> gainFood = new ArrayList<>();
@@ -56,20 +56,16 @@ public class Game {
     }
 
     public void initAnimal() {
-        Animal animal = new Animal();
-        animal.setName("Rex");
+        Animal animal = new Animal("Rex");
     }
 
     private void initAnimalFood() {
-        AnimalFood animalFood = new AnimalFood();
-        animalFood.setName("Chap");
-
-        AnimalFood animalFood1 = new AnimalFood();
-        animalFood1.setName("Pedigree");
-
+        AnimalFood animalFood = new AnimalFood("Chap");
+        AnimalFood animalFood1 = new AnimalFood("Pedigree");
 
 
     }
+
     private void initActivities() {
         EntertaimentActivity acttivity = new EntertaimentActivity();
         acttivity.setName("Fetch");
@@ -118,12 +114,10 @@ public class Game {
 
     private void initActivity() {
         System.out.println("Available activity is: ");
-        Activity activity1 = new Activity();
-        activity1.setName("Running");
+        Activity activity1 = new Activity("Running");
         gainActivity[0] = activity1;
 
-        Activity activity2 = new Activity();
-        activity2.setName("Sleep");
+        Activity activity2 = new Activity("Sleep");
         gainActivity[1] = activity2;
     }
 
@@ -136,11 +130,9 @@ public class Game {
 
     private void initFood() {
         int foodCount = 2;
-        AnimalFood food1 = new AnimalFood();
-        food1.setName("Chappy");
+        AnimalFood food1 = new AnimalFood("Chappy");
         gainFood.add(food1);
-        AnimalFood food2 = new AnimalFood();
-        food2.setName("Lizard food");
+        AnimalFood food2 = new AnimalFood("Lizard food");
         gainFood.add(food2);
 
     }

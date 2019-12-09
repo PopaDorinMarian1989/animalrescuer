@@ -18,9 +18,7 @@ public class Veterinarian {
         this.name = name;
     }
 
-    public Veterinarian() {
 
-    }
 
     public String getName() {
         return name;
